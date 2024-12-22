@@ -1,0 +1,13 @@
+2024-Dec-21 14:46:07,521 [main] com.CarnationTestingShastra24KDD.Keyword 
+  INFO  Launched Chrome Browser
+	2024-Dec-21 14:46:15,250 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  INFO  Entering first name: sujataa
+	2024-Dec-21 14:46:15,250 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  INFO  Entering last name: sujataa
+	2024-Dec-21 14:46:15,348 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  INFO  Entering middle name: sujataa
+	2024-Dec-21 14:46:15,464 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  INFO  Entering employee ID: 12345
+	2024-Dec-21 14:46:15,551 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  INFO  Clicking the Save button
+	

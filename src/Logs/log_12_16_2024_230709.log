@@ -1,0 +1,11 @@
+2024-Dec-16 23:07:01,022 [main] com.CarnationTestingShastra24KDD.Keyword 
+  INFO  Launched Chrome Browser
+	2024-Dec-16 23:07:08,916 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  ERROR Entering first name: sujataa
+	2024-Dec-16 23:07:09,084 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  INFO  Entering middle name: sujataa
+	2024-Dec-16 23:07:09,220 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  INFO  Entering employee ID: 12345
+	2024-Dec-16 23:07:09,341 [main] com.Carnation24KDD.pages.AddEmployeePage 
+  INFO  Clicking the Save button
+	
