@@ -11,17 +11,28 @@
 	</properties>
 	<build>
 	<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-surefire-plugin</artifactId>
-			<version>3.0.0-M3</version>
-			<configuration>
-				<suiteXmlFiles>
-					<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-				</suiteXmlFiles>
-			</configuration>
-		</plugin>
-		</plugins>
+        <!-- Maven Compiler Plugin to use Java 17 for compilation -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version> <!-- Specify the version of the compiler plugin -->
+            <configuration>
+                <release>17</release> <!-- Ensure it compiles with Java 17 -->
+            </configuration>
+        </plugin>
+
+        <!-- Add any other plugins as required -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M3</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
+        </plugin>
+    </plugins>
 	</build>
 
 
