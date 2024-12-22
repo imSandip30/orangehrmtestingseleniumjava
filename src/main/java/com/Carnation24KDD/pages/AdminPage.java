@@ -18,13 +18,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 
 public class AdminPage {
 
   //  WebDriver driver;
-    private static final Logger logger = LogManager.getLogger(AdminPage.class);
+    //private static final Logger logger = LogManager.getLogger(AdminPage.class);
 
     // Locators for Admin page elements
     @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button")
@@ -75,73 +75,73 @@ public class AdminPage {
 
     // Navigate to Admin Page
     public void navigateToAdmin() {
-        logger.info("Navigating to the Admin page");
+       // logger.info("Navigating to the Admin page");
      //   driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers");
     }
 
     // Add new user method
     public void clickAddButton() {
-        logger.info("Clicking on the Add button");
+   //     logger.info("Clicking on the Add button");
         addButton.click();
     }
 
     public void enterUsername(String username) {
-        logger.info("Entering username: " + username);
+    //    logger.info("Entering username: " + username);
         searchUsernameField.sendKeys(username);
     }
 
     // Method to enter password
     public void enterPassword(String password) {
-        logger.info("Entering password: " + password);
+     //   logger.info("Entering password: " + password);
         passwordField.sendKeys(password);  // Using @FindBy initialized element
     }
 
     // Method to enter confirm password
     public void enterConfirmPassword(String confirmPassword) {
-        logger.info("Entering confirm password: " + confirmPassword);
+      //  logger.info("Entering confirm password: " + confirmPassword);
         confirmPasswordField.sendKeys(confirmPassword);  // Using @FindBy initialized element
     }
 
     // Method to enter email
     public void enterEmail(String email) {
-        logger.info("Entering email: " + email);
+     //   logger.info("Entering email: " + email);
         emailField.sendKeys(email);  // Using @FindBy initialized element
     }
     
     
     public void clickSaveButton() {
-        logger.info("Clicking on the Save button");
+      //  logger.info("Clicking on the Save button");
         saveButton.click();
     }
 
     // Delete user method
     public void deleteUser() {
-        logger.info("Deleting the user");
+      //  logger.info("Deleting the user");
         deleteButton.click();
     }
 
     // Select user and edit details
     public void selectUser(String username) {
       //  WebElement userLink = driver.findElement(By.xpath("//a[text()='" + username + "']"));
-        logger.info("Selecting user: " + username);
+      //  logger.info("Selecting user: " + username);
      //   userLink.click();
     }
 
     // Assign role to user
     public void assignRole(String role) {
-        logger.info("Assigning role: " + role);
+     //   logger.info("Assigning role: " + role);
         roleDropdown.sendKeys(role);
     }
 
     // Activate or Deactivate user
     public void changeUserStatus(String status) {
-        logger.info("Changing user status to: " + status);
+      //  logger.info("Changing user status to: " + status);
         statusDropdown.sendKeys(status);
     }
 
     // Search for a user
     public void searchForUser(String username) {
-        logger.info("Searching for user: " + username);
+     //   logger.info("Searching for user: " + username);
         searchUsernameField.sendKeys(username);
         searchButton.click();
     }
